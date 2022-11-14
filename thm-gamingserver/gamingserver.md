@@ -27,9 +27,9 @@ mentioned in a comment.
 I then modified the rsa key permissions and used the key to log in via ssh as 
 john.
 
-![Logging in as john via ssh](report/screenshots/2022-11-14_16-05.png)
+![Logging in as john via ssh](screenshots/2022-11-14_16-05.png)
 
-![Proof of low-privilege shell](screenshots/2022-11-14_16-13.png)
+![Proof of low-privilege shell](screenshots/user_proof.png)
 
 ## Privilege Escalation
 
