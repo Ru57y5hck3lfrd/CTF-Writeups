@@ -21,5 +21,6 @@
 
 # Try Hack Me
 
+- [GamingServer](thm-gamingserver/gamingserver.md)
 - [Chill Hack](thm-chillhack/chillhack.md)
 - [Tomghost](thm-tomghost/tomghost.md)
