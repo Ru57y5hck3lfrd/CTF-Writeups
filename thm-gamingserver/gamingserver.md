@@ -51,4 +51,4 @@ machine and executed the following commands to get a shell as root:
 4. `lxc start ignite`
 5. `lxc exec /bin/sh`
 
-[Spawning shell as root](screenshots/root_proof.png)
+![Spawning shell as root](screenshots/root_proof.png)
