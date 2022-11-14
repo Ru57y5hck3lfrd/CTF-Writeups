@@ -47,7 +47,7 @@ get a shell as this user.
 
 ![Decrypted file with credentials](screenshots/2022-11-14_11-31.png)
 
-[Proof of shell as user merlin](report/screenshots/user_proof2.png)
+![Proof of shell as user merlin](report/screenshots/user_proof2.png)
 
 ## Privilege Escalation
 

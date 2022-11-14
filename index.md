@@ -21,4 +21,5 @@
 
 # Try Hack Me
 
-- [tomghost](thm-tomghost/tomghost.md)
+- [Chill Hack](thm-chillhack/chillhack.md)
+- [Tomghost](thm-tomghost/tomghost.md)
