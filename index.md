@@ -28,4 +28,5 @@
 
 # OffSec Proving Grounds
 
+- [Twiggy](pg-twiggy/twiggy.md)
 - [Exfiltrated](pg-exfiltrated/exfiltrated.md)
