@@ -1,5 +1,6 @@
 # Hack The Box
 
+- [Pandora](htb-pandora/pandora.md)
 - [Backdoor](htb-backdoor/backdoor.md)
 - [Horizontall](htb-horizontall/horizontall.md)
 - [Chatterbox](htb-chatterbox/chatterbox.md)
