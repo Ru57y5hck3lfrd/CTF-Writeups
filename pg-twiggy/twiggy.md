@@ -2,10 +2,11 @@
 
 ## Reconnaissance
 
-This one was quite hard to find the attack vector, but looking at the response
-headers from the API running on port 8000 you'll see that it's a Salt Framework
-API. Searching that exact header you will find that an authentication bypass
-vulnerability is present in this version (CVE-2020-11651).
+This one was quite hard to find the attack vector, but an easy box once you do
+find it. Looking at the response headers from the API running on port 8000 
+you'll see that it's a Salt Framework API. Searching that exact header you will 
+find that an authentication bypass vulnerability is present in this version 
+(CVE-2020-11651).
 
 ![Salt API in response header](screenshots/2022-11-15_17-40.png)
 

