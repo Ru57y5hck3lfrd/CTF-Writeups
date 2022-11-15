@@ -25,3 +25,7 @@
 - [GamingServer](thm-gamingserver/gamingserver.md)
 - [Chill Hack](thm-chillhack/chillhack.md)
 - [Tomghost](thm-tomghost/tomghost.md)
+
+# OffSec Proving Grounds
+
+- [Exfiltrated](pg-exfiltrated/exfiltrated.md)
