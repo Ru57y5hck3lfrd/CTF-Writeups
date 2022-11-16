@@ -28,5 +28,6 @@
 
 # OffSec Proving Grounds
 
+- [Wombo](pg-wombo/wombo.md)
 - [Twiggy](pg-twiggy/twiggy.md)
 - [Exfiltrated](pg-exfiltrated/exfiltrated.md)
