@@ -1,4 +1,4 @@
-# Hack The Box
+## Hack The Box
 
 - [Pandora](htb-pandora/pandora.md)
 - [Backdoor](htb-backdoor/backdoor.md)
@@ -20,14 +20,15 @@
 - [Lame](htb-lame/lame.md)
 - [Blue](htb-blue/blue.md)
 
-# Try Hack Me
+## Try Hack Me
 
 - [GamingServer](thm-gamingserver/gamingserver.md)
 - [Chill Hack](thm-chillhack/chillhack.md)
 - [Tomghost](thm-tomghost/tomghost.md)
 
-# OffSec Proving Grounds
+## OffSec Proving Grounds
 
+- [Bratarina](pg-bratarina/bratarina.md)
 - [Flimsy](pg-flimsy/flimsy.md)
 - [Wombo](pg-wombo/wombo.md)
 - [Twiggy](pg-twiggy/twiggy.md)
