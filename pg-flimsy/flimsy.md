@@ -3,8 +3,8 @@
 ## Reconnaissance
 
 The response header on the API listening on port 43500 says it's running Apache 
-APISix version 2.8. Searching exploit db for this service you will find that it 
-has an RCE vulnerability (CVE-2022-24112). 
+APISix version 2.8. Searching online for this version of the service you will 
+find that it has an RCE vulnerability (CVE-2022-24112). 
 
 ![APISix](screenshots/2022-11-16_12-50.png)
 
