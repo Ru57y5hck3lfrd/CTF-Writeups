@@ -22,6 +22,7 @@
 
 ## Try Hack Me
 
+- [Attacktive Directory](thm-attacktivedirect/attacktivedirect.md)
 - [GamingServer](thm-gamingserver/gamingserver.md)
 - [Chill Hack](thm-chillhack/chillhack.md)
 - [Tomghost](thm-tomghost/tomghost.md)
