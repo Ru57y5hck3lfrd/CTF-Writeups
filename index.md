@@ -22,6 +22,7 @@
 
 ## Try Hack Me
 
+- [VulnNet: Roasted](thm-vulnnet-roasted/vulnnet-roasted.md)
 - [Attacktive Directory](thm-attacktivedirect/attacktivedirect.md)
 - [GamingServer](thm-gamingserver/gamingserver.md)
 - [Chill Hack](thm-chillhack/chillhack.md)
